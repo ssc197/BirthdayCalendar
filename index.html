@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Birthday Calendar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Birthday Calendar</h2>
+      <div class="form-wrapper">
+        <div class="form-group mt">
+          <button class="btn btn-primary" onclick="prevWeek()">Prev</button>
+            </div>
+      <div class="form-group">
+        <label for="year">Months</label>
+
+      <select id="month" class="form-control">
+        <option value="0">Jan</option>
+        <option value="1">Feb</option>
+        <option value="2">MArch</option>
+        <option value="3">April</option>
+        <option value="4">May</option>
+        <option value="5">Jun</option>
+        <option value="6">July</option>
+        <option value="7">Aug</option>
+        <option value="8">Sep</option>
+        <option value="9">Oct</option>
+        <option value="10">Nov</option>
+        <option value="11">Dec</option>
+      </select>
+    </div>
+        <div class="form-group ">
+          <label for="year">Year</label>
+      <input type="number" id="yearData"  class="form-control" value="1984" />
+        </div>
+
+        <div class="form-group mt">
+          <button class="btn btn-primary" onclick="setNewData()">Update</button>
+            </div>
+        <div class="form-group mt">
+      <button class="btn btn-primary" onclick="nextWeek()">Next</button>
+      </div>
+    
+    </div>
+      <div class="weeklyBox">
+        <div class="weeklyCard">
+          <div class="weeklyCardTitle">Sun</div>
+          <div class="weeklyCardPills"></div>
+        </div>
+        <div class="weeklyCard">
+          <div class="weeklyCardTitle">Mon</div>
+          <div class="weeklyCardPills"></div>
+        </div>
+        <div class="weeklyCard">
+          <div class="weeklyCardTitle">Tues</div>
+          <div class="weeklyCardPills"></div>
+        </div>
+        <div class="weeklyCard">
+          <div class="weeklyCardTitle">Wed</div>
+          <div class="weeklyCardPills"></div>
+        </div>
+        <div class="weeklyCard">
+          <div class="weeklyCardTitle">Thur</div>
+          <div class="weeklyCardPills"></div>
+        </div>
+        <div class="weeklyCard">
+          <div class="weeklyCardTitle">Fri</div>
+          <div class="weeklyCardPills"></div>
+        </div>
+        <div class="weeklyCard">
+          <div class="weeklyCardTitle">Sat</div>
+          <div class="weeklyCardPills"></div>
+        </div>
+      </div>
+
+      <div class="jsondata">
+        <div class="form-group">
+          <label for="year">Enter your Json Data</label>
+
+          <textarea id="jsonbd" class="form-control" rows="30"> </textarea>
+        </div>
+      </div>
+  
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
